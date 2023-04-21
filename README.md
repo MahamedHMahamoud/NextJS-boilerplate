@@ -14,7 +14,7 @@ Clone the repository:
 git clone https://github.com/maxfowzi/nextjs.git
 
 Change to the project directory:
-cd nextjs-boilerplate
+cd nextjs
 
 Install the dependencies:
 npm install
