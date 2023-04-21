@@ -11,7 +11,7 @@ Getting Started
 To get started with this boilerplate, follow these steps:
 
 Clone the repository:
-git clone https://github.com/yourusername/nextjs-boilerplate.git
+git clone https://github.com/maxfowzi/nextjs.git
 
 Change to the project directory:
 cd nextjs-boilerplate
