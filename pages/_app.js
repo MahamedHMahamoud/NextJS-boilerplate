@@ -1,14 +1,9 @@
-import '@/styles/globals.css'
-import Layout from '../components/general/Layout'
+import Layout from '@/comp/general/Layout';
 
-
-export default function App({
-  Component,
-  pageProps: { session, ...pageProps },
-}) {
+export default function App({ Component, pageProps }) {
   return (
     <Layout>
       <Component {...pageProps} />
-    </Layout>     
-  )
+    </Layout>
+  );
 }
