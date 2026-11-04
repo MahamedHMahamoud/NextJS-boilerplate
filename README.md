@@ -1,40 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Next.js and MUI boilerplate
 
-## Getting Started
+A minimal starter with the Next.js Pages Router and Material UI: a shared layout with header and footer, and an empty home page to build from.
 
-First, run the development server:
+| Package | Version |
+| --- | --- |
+| Next.js | 16 |
+| React | 19 |
+| Material UI | 9 |
+
+Requires Node.js 20.9 or newer.
+
+## Getting started
 
 ```bash
+git clone https://github.com/MahamedHMahamoud/NextJS-boilerplate.git
+cd NextJS-boilerplate
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000. The page reloads as you edit.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Project structure
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+| Path | What it does |
+| --- | --- |
+| `pages/index.js` | Home page, start here |
+| `pages/_app.js` | Wraps every page in the layout |
+| `pages/api/hello.js` | Example API route at `/api/hello` |
+| `comp/general/` | `Layout`, `Header` and `Footer` |
+| `styles/` | CSS files, not imported by default |
+| `public/` | Static files |
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+Imports can use the `@/` alias for the project root, for example `@/comp/general/Layout`.
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Scripts
 
-## Learn More
+| Command | What it does |
+| --- | --- |
+| `npm run dev` | Development server |
+| `npm run build` | Production build |
+| `npm start` | Runs the production build |
 
-To learn more about Next.js, take a look at the following resources:
+## Keeping it secure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+Run `npm audit` before starting a project from this template, and update with `npm update`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## License
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+GPL-3.0, see [LICENSE](LICENSE).
